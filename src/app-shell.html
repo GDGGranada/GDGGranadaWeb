@@ -174,17 +174,8 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               <paper-tab name="home" link tabindex="-1">
                 <a href="[[rootPath]]">Inicio</a>
               </paper-tab>
-              <paper-tab name="groups" link tabindex="-1">
-                <a href="[[rootPath]]groups">Grupos</a>
-              </paper-tab>
-              <!--<paper-tab name="events" link tabindex="-1">
-                <a href="[[rootPath]]events">Eventos</a>
-              </paper-tab>-->
               <paper-tab name="blog" link tabindex="-1">
                 <a href="http://blog.gdg.es" target="_blank">Blog</a>
-              </paper-tab>
-              <paper-tab name="branding" link tabindex="-1">
-                <a href="[[rootPath]]branding">Branding</a>
               </paper-tab>
             </paper-tabs>
           </template>
@@ -197,9 +188,6 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
           selected-attribute="visible"
           fallback-selection="404">
         <page-home name="home"></page-home>
-        <page-groups name="groups"></page-groups>
-        <!--<page-events name="events"></page-events>-->
-        <page-branding name="branding"></page-branding>
         <page-404 name="404"></page-404>
       </neon-animated-pages>
     </app-header-layout>
@@ -214,10 +202,7 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               class="drawer-menu"
               role="navigation">
             <a name="home" href="[[rootPath]]">Inicio</a>
-            <a name="groups" href="[[rootPath]]groups">Grupos</a>
-            <!--<a name="events" href="[[rootPath]]events">Eventos</a>-->
             <a name="blog" href="http://blog.gdg.es">Blog</a>
-            <a name="branding" href="[[rootPath]]branding">Branding</a>
           </iron-selector>
         </div>
       </app-drawer>
