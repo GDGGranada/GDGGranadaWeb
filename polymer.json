@@ -1,0 +1,26 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/app-shell.html",
+  "fragments": [
+    "src/page-404/page-404.html",
+    "src/page-branding/page-branding.html",
+    "src/page-events/page-events.html",
+    "src/page-groups/page-groups.html",
+    "src/page-home/page-home.html"
+  ],
+  "sources": [
+    "data/**/*",
+    "images/**/*",
+    "src/**/*",
+    "bower.json"
+  ],
+  "extraDependencies": [
+    "bower_components/app-storage/app-indexeddb-mirror/*.js",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js",
+    "LICENSE.txt",
+    "manifest.json"
+  ],
+  "lint": {
+    "rules": ["polymer-1"]
+  }
+}
