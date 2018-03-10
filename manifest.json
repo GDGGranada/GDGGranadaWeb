@@ -1,7 +1,7 @@
 {
-  "name": "GDG Spain",
-  "short_name": "GDG Spain",
-  "description": "Organización que agrupa a todos los Google Developer Groups de España.",
+  "name": "GDG Granada",
+  "short_name": "GDG Granada",
+  "description": "Google Developer Group Granada, comunidad local.",
   "start_url": "./?utm_source=homescreen",
   "display": "standalone",
   "theme_color": "#4285f4",

@@ -1,13 +1,13 @@
 {
   "name": "gdg.es",
   "version": "0.15.2",
-  "description": "The GDG Spain official website",
+  "description": "The GDG Granada official website",
   "author": "Abdón Rodríguez Davila <a@abdonrd.com> (https://abdonrd.com)",
-  "homepage": "https://gdg.es",
+  "homepage": "https://gdggranada.com",
   "license": "MIT",
-  "repository": "GDGSpain/gdg.es",
+  "repository": "GDGGranada",
   "bugs": {
-    "url": "https://github.com/GDGSpain/gdg.es/issues"
+    "url": "https://github.com/GDGGranada/"
   },
   "devDependencies": {
     "del": "^3.0.0",

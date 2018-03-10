@@ -19,7 +19,7 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/paper-styles/typography.html">
 <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
-<link rel="import" href="../bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="../bower_components/gdg-logo/gdg-logo.html">
 <link rel="import" href="app-icons.html">
 <link rel="import" href="app-styles.html">
 
@@ -121,7 +121,6 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
 
       .app-drawer-scrollable {
         overflow: auto;
-
         height: 100%;
       }
 
@@ -145,11 +144,6 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
         query="max-width: 675px"
         query-matches="{{smallScreen}}"></iron-media-query>
 
-    <firebase-app
-        auth-domain="gdg-es-develop.firebaseapp.com"
-        database-url="https://gdg-es-develop.firebaseio.com"
-        api-key="AIzaSyAIF5ALCsCSwKZhPqIIfwSOQPRrswB1Ovc"></firebase-app>
-
     <app-header-layout>
       <app-header condenses reveals effects="waterfall" role="navigation">
         <app-toolbar>
@@ -161,8 +155,8 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               aria-label="Sections"></paper-icon-button>
 
           <div class="logo-container">
-            <a href="[[rootPath]]" aria-label="GDG Spain home">
-              <iron-image src="[[importPath]]../images/gdgspain-logo.png" preload sizing="cover"></iron-image>
+            <a href="[[rootPath]]" aria-label="GDG Granada home">
+              <gdg-logo name="Granada"></gdg-logo>
             </a>
           </div>
 
@@ -174,8 +168,8 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               <paper-tab name="home" link tabindex="-1">
                 <a href="[[rootPath]]">Inicio</a>
               </paper-tab>
-              <paper-tab name="blog" link tabindex="-1">
-                <a href="http://blog.gdg.es" target="_blank">Blog</a>
+              <paper-tab name="events" link tabindex="-1">
+                <a href="https://www.meetup.com/es-ES/granadagdg/" target="_blank">Eventos</a>
               </paper-tab>
             </paper-tabs>
           </template>
@@ -202,7 +196,7 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               class="drawer-menu"
               role="navigation">
             <a name="home" href="[[rootPath]]">Inicio</a>
-            <a name="blog" href="http://blog.gdg.es">Blog</a>
+            <a name="events" href="https://www.meetup.com/es-ES/granadagdg/">Eventos</a>
           </iron-selector>
         </div>
       </app-drawer>
