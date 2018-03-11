@@ -22,7 +22,8 @@
     "paper-styles": "PolymerElements/paper-styles#^1.1.0",
     "paper-tabs": "PolymerElements/paper-tabs#^1.7.0",
     "polymer": "Polymer/polymer#^1.9.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "paper-ripple": "PolymerElements/paper-ripple#^2.1.0"
   },
   "resolutions": {
     "webcomponentsjs": "^0.7.0"

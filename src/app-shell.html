@@ -19,8 +19,14 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/paper-styles/typography.html">
 <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-app.html">
 <link rel="import" href="app-icons.html">
 <link rel="import" href="app-styles.html">
+
+<!-- TODO: Remove the firebase-query.html from here.
+Now, if we remove it, Firebase doesn't work, although it's already imported by
+page-groups.html and page-events.html -->
+<link rel="import" href="../bower_components/polymerfire/firebase-query.html">
 
 <dom-module id="app-shell">
   <template>
@@ -143,6 +149,11 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
         query="max-width: 675px"
         query-matches="{{smallScreen}}"></iron-media-query>
 
+    <firebase-app
+        auth-domain="gdggranada-57394.firebaseapp.com"
+        database-url="https://gdggranada-57394.firebaseio.com"
+        api-key="AIzaSyA67tU7ht_l3kpiLdysYhHCzVjlb7gx_xs"></firebase-app>
+
     <app-header-layout>
       <app-header condenses reveals effects="waterfall" role="navigation">
         <app-toolbar>
@@ -167,6 +178,9 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               <paper-tab name="home" link tabindex="-1">
                 <a href="[[rootPath]]">Inicio</a>
               </paper-tab>
+              <paper-tab name="people" link tabindex="-1">
+                <a href="/people">Grupos</a>
+              </paper-tab>
               <paper-tab name="events" link tabindex="-1">
                 <a href="https://www.meetup.com/es-ES/granadagdg/" target="_blank">Eventos</a>
               </paper-tab>
@@ -181,6 +195,7 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
           selected-attribute="visible"
           fallback-selection="404">
         <page-home name="home"></page-home>
+        <page-people name="people"></page-people>
         <page-404 name="404"></page-404>
       </neon-animated-pages>
     </app-header-layout>
@@ -194,7 +209,8 @@ This code may only be used under the MIT style license found at http://gdg.es/LI
               attr-for-selected="name"
               class="drawer-menu"
               role="navigation">
-            <a name="home" href="[[rootPath]]">Inicio</a>
+             <a name="home" href="[[rootPath]]">Inicio</a>
+             <a name="people" href="/people">Grupos</a>
             <a name="events" href="https://www.meetup.com/es-ES/granadagdg/">Eventos</a>
           </iron-selector>
         </div>
