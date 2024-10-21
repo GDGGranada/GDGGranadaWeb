@@ -1,18 +1,35 @@
-# GDG Granada
+## The GDG Granada website is now based on Astral
 
-This is the official [Google Developer Group Granada](https://gdggranada.com/) website.
+Astral by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-### What is a "GDG"?
-Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.
 
-A GDG can take many forms -- from just a few people getting together to watch our latest video, to large gatherings with demos and tech talks, to events like code sprints and hackathons. However, at the core, GDGs are focused on developers and technical content, and the core audience should be developers.
+First of its kind on H5U! Astral features a flat, minimalistic design, a fully animated
+interface (with noscript fallbacks), and styling for all basic page elements (including
+blockquotes, tables and lists). Enjoy!
 
-[More information](https://developers.google.com/groups/start).
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-## Contribute
+(* = Not included)
 
-If you want to contribute to this project, please, visit our [CONTRIBUTING.md](CONTRIBUTING.md).
+Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
 
-## Attributions
-This website was forked from [GDG Spain](https://github.com/GDGSpain/gdgspain.github.io).
+AJ
+aj@lkn.io | @ajlkn
 
+PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+
+
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fontawesome.io)
+
+	Other:
+		jQuery (jquery.com)
+		Responsive Tools (github.com/ajlkn/responsive-tools)
